@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Encoder By_Peter </title>
+        <meta name="generator" content="rPeter_Enconder">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A javascript function to encrypt html">
+        <meta name="Peter" content="encoder html ">
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body class="body_background body" id="body">
+        <div class="container">
+</div>
+        <h1><h1 class="text-center text-primary bg-primary encodehtml">Encoder Html</h1></h1>
+        <div class="form-group text-center grouptextarea"> 
+            <label class="control-label text-primary" for="formInput22">Inserte Texto a Encodear</label>             
+            <textarea class="form-control maxwidthtextarea marginunder479 marginunder500" rows="3" id="mytextarea" placeholder="Su código..."></textarea>
+        </div>
+        <button type="button" class="btn btn-primary buttonstartencode buttostartencode btn-sm" onclick="codificarurl()">Start Encode</button>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script type="text/javascript">
+          function codificarurl()
+            {
+              var x = document.getElementById("mytextarea").value;
+              if (x!="")
+                 {
+                 var noveo=encodeURI(x);
+                 var putting=document.getElementById("mytextarea").value="<script         type=\"text/javascript\">m=\""+noveo+"\";var d=decodeURI(m);document.write(d);</script"+'>'
+                 }
+                 else{alert("Por favor el campo está vacío inserte el código a encodear");}
+              
+            }
+
+          </script>
+    </body>
+</html>
